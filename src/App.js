@@ -1,7 +1,10 @@
+import React from 'react'
+import Home from './Layout/Home'
+
 export default function App() {
     return (
         <div className="App">
-            Tutor App
+            <Home />
         </div>
     );
 }
