@@ -7,6 +7,9 @@
 .navbrand, .navlink{
   z-index: 99;
 }
+.navbrand{
+  height: 70px;
+}
 .navbrand a{
   color:#fff!important;
   font-weight: 700;
@@ -54,11 +57,12 @@ a {
 }
 .thot{
   position: absolute;
+  width: 100%;
+  text-align: center;
   color: #fff!important;
   z-index: 1;
   bottom: 44%;
-  left: 32.5%;
-  transform: scale(-44%,-32.5%);
+  transform: scale(-44%);
 }
 .thot h1{
   font-weight: 300;
@@ -84,5 +88,13 @@ strong{
   }
   .dropdown-itemtoggle {
     display: block!important;
+  }
+.SectionCover{
+    height: calc(70vh - 196px)!important;
+    min-height: 400px!important;
+  }
+  .thot h1{
+    font-size: 2rem;
+    line-height: 1!important;
   }
 }
