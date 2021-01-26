@@ -1,6 +1,6 @@
 .navBlock{
-  background-color: #fff!important;
-  z-index: 10000;
+  background-color: #fff;
+  z-index: 3;
   width: 300px;
   position: fixed;
   right: 0;
@@ -15,33 +15,33 @@
   }
   margin-top: -73px;
 }
-.x{
+.side-closeButton{
   width: 100%;
   float: left;
   padding-left: 20px;
   padding-right: 20px;
 }
-.x1{
+.closeIcon{
   font-size: 30px;
   cursor: pointer;
 }
-.navlink1{
+.navLink-side{
   width: 100%;
 }
-.navlink1 ul li{
+.navLink-side ul li{
   display: block;
   text-align-last: left;
   padding: 0.5em 2em;
 }
-.navlink1 ul li a{
+.navLink-side ul li a{
   font-size: 23px;
   color: #212529;
-  z-index: 10000!important;
+  z-index: 4;
   padding: 10px 20px;
 }
-.navlink1 ul li a.active{
+.navLink-side ul li a.active{
   color: #0779e4;
 }
-.navlink1 ul li a:hover {
+.navLink-side ul li a:hover {
   color: #0779e4;
 }

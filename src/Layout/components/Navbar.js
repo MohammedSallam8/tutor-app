@@ -3,24 +3,24 @@ import NavbarBlock from './NavbarBlock'
 import "./style/Navbar.scss"
 
 export default () => {
-  const [ navBlock, setnavBlock ] = useState(false)
+  const [ navBlock, setNavBlock ] = useState(false)
   return (
-    <div className="container-flouid SectionCover">
+    <div className="container-fluid section-cover">
       <div className="container">
         <div className="navs">
-          <div className="navbrand"><a href="#"><h2>Tutor</h2></a></div>
-          <div className="navlink">
+          <div className="navBrand"><a href="#"><h2>Tutor</h2></a></div>
+          <div className="navLink">
             <ul>
-              <li className="navlink99 active"><a href="#Home">Home</a></li>
-              <li className="navlink99"><a href="#">Tutorials</a></li>
-              <li className="navlink99"><a href="#">Testimonials</a></li>
-              <li className="navlink99"><a href="#">Blog</a></li>
-              <li className="navlink99"><a href="#">About</a></li>
-              <li className="navlink99"><a href="#">Contact</a></li>
+              <li className="navLinks active"><a href="#Home">Home</a></li>
+              <li className="navLinks"><a href="#">Tutorials</a></li>
+              <li className="navLinks"><a href="#">Testimonials</a></li>
+              <li className="navLinks"><a href="#">Blog</a></li>
+              <li className="navLinks"><a href="#">About</a></li>
+              <li className="navLinks"><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div className="dropdown-itemtoggle">
-            <span className="togs"><i onClick={() => setnavBlock(!navBlock)} class="fas fa-bars"></i></span>
+          <div className="dropdown-itemToggle">
+            <span className="itemToggler"><i onClick={() => setNavBlock(!navBlock)} class="fas fa-bars"></i></span>
             { navBlock ? <NavbarBlock /> : null }
           </div>
         </div>

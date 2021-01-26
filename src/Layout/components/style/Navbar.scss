@@ -3,31 +3,32 @@
   display: flex;
   justify-content: space-between;
   padding: 2em 0;
+  overflow: hidden;
 }
-.navbrand, .navlink{
-  z-index: 99;
+.navBrand, .navLink{
+  z-index: 2;
 }
-.navbrand{
+.navBrand{
   height: 70px;
 }
-.navbrand a{
-  color:#fff!important;
+.navBrand a{
+  color:#fff;
   font-weight: 700;
 }
-.navlink a{
+.navLink a{
   font-size: 1.10em;
-  color: #fff!important;
+  color: #fff;
   padding: 0.5em 1em;
   font-weight: 400;
 }
 li {
   display: inline-block;
-  overflow: hidden!important;
+  overflow: hidden;
 }
 a {
-  text-decoration: none!important;
+  text-decoration: none;
 }
-.navlink99.active::after{
+.navLinks.active::after{
   position: absolute;
   left: 50.7%;
   top: 65px;
@@ -36,15 +37,15 @@ a {
   background: #fff;
   content: "";
 }
-.SectionCover{
+.section-cover{
   background-image: url(hero_bg.jpg);
   background-position: center;
   background-size: cover;
   height: 90vh;
   position: relative;
-
+ overflow: hidden;
 }
-.SectionCover::before{
+.section-cover::before{
   position: absolute;
   content: "";
   top: 0;
@@ -59,37 +60,36 @@ a {
   position: absolute;
   width: 100%;
   text-align: center;
-  color: #fff!important;
-  z-index: 1;
+  color: #fff;
+  z-index: 2;
   bottom: 44%;
-  transform: scale(-44%);
 }
 .thot h1{
   font-weight: 300;
   font-size: 3rem;
 }
 strong{
-  font-weight: 900!important;
+  font-weight: 900;
 }
-.dropdown-itemtoggle{
+.dropdown-itemToggle{
  height: 40px;
- z-index: 99;
+ z-index: 2;
  display: none;
  text-align: right;
 }
-.togs{
+.itemToggler{
   font-size: 25px;
   color: #000;
   cursor: pointer;
 }
 @media screen and (max-width: 991px){
-  .navlink{
+  .navLink{
     display: none!important;
   }
-  .dropdown-itemtoggle {
+  .dropdown-itemToggle {
     display: block!important;
   }
-.SectionCover{
+  .section-cover{
     height: calc(70vh - 196px)!important;
     min-height: 400px!important;
   }

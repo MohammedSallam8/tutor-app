@@ -7,10 +7,10 @@ export default function NavbarBlock () {
     <>
     { toggle ?
     <div className="navBlock">
-      <div className="x">
-        <span><i onClick={() => setToggle(!toggle)} class="fas fa-times x1"></i></span>
+      <div className="side-closeButton">
+        <span><i onClick={() => setToggle(!toggle)} class="fas fa-times closeIcon"></i></span>
       </div>
-        <div className="navlink1">
+        <div className="navLink-side">
             <ul>
               <li><a className="active" href="#">Home</a></li>
               <li><a href="#">Tutorials</a></li>
