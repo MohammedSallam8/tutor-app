@@ -1,0 +1,100 @@
+.navs{
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+}
+.navbrand, .navlink{
+  z-index: 99;
+}
+.navbrand{
+  height: 70px;
+}
+.navbrand a{
+  color:#fff!important;
+  font-weight: 700;
+}
+.navlink a{
+  font-size: 1.10em;
+  color: #fff!important;
+  padding: 0.5em 1em;
+  font-weight: 400;
+}
+li {
+  display: inline-block;
+  overflow: hidden!important;
+}
+a {
+  text-decoration: none!important;
+}
+.navlink99.active::after{
+  position: absolute;
+  left: 50.7%;
+  top: 65px;
+  width: 44px;
+  height: 2px;
+  background: #fff;
+  content: "";
+}
+.SectionCover{
+  background-image: url(hero_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+
+}
+.SectionCover::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  height: 100%;
+}
+.thot{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff!important;
+  z-index: 1;
+  bottom: 44%;
+  transform: scale(-44%);
+}
+.thot h1{
+  font-weight: 300;
+  font-size: 3rem;
+}
+strong{
+  font-weight: 900!important;
+}
+.dropdown-itemtoggle{
+ height: 40px;
+ z-index: 99;
+ display: none;
+ text-align: right;
+}
+.togs{
+  font-size: 25px;
+  color: #000;
+  cursor: pointer;
+}
+@media screen and (max-width: 991px){
+  .navlink{
+    display: none!important;
+  }
+  .dropdown-itemtoggle {
+    display: block!important;
+  }
+.SectionCover{
+    height: calc(70vh - 196px)!important;
+    min-height: 400px!important;
+  }
+  .thot h1{
+    font-size: 2rem;
+    line-height: 1!important;
+  }
+}

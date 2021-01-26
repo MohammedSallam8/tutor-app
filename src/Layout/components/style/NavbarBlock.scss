@@ -1,0 +1,47 @@
+.navBlock{
+  background-color: #fff!important;
+  z-index: 10000;
+  width: 300px;
+  position: fixed;
+  right: 0;
+  padding-top: 20px;
+  height: calc(100vh);
+  box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+  transition: all 0.7s;
+  animation: animate .7s;
+  @keyframes animate {
+    0%{right: -100%}
+    100%{right: 0}
+  }
+  margin-top: -73px;
+}
+.x{
+  width: 100%;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.x1{
+  font-size: 30px;
+  cursor: pointer;
+}
+.navlink1{
+  width: 100%;
+}
+.navlink1 ul li{
+  display: block;
+  text-align-last: left;
+  padding: 0.5em 2em;
+}
+.navlink1 ul li a{
+  font-size: 23px;
+  color: #212529;
+  z-index: 10000!important;
+  padding: 10px 20px;
+}
+.navlink1 ul li a.active{
+  color: #0779e4;
+}
+.navlink1 ul li a:hover {
+  color: #0779e4;
+}
