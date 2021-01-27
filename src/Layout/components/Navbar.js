@@ -12,7 +12,7 @@ export default () => {
     }, [navBlock]);
 
     return (
-        <div className="container-fluid section-cover">
+        <div className="container-fluid section-header">
             <div className="container">
                 <div className="navs">
                     <div className="navBrand">
@@ -42,11 +42,11 @@ export default () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="dropdown-itemToggle">
+                    <div className="dropdown-ItemToggle">
                         <button onClick={(e) => {
                             e.stopPropagation();
                             setNavBlock(true)
-                        }} className="itemToggler fas fa-bars">
+                        }} className="item-Toggler fas fa-bars">
                         </button>
 
                         {/*// sidebar*/}

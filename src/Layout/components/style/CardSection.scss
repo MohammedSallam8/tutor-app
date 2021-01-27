@@ -1,0 +1,131 @@
+.bg-Light
+{
+  background-color: #f8f9fa;
+  padding: 70px 0;
+
+  .m-Top
+  {
+    position: relative;
+    z-index: 3;
+    margin-top: -150px;
+
+    .card-Box
+    {
+      height: 100% ;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 15px 30px 0 rgba(0,0,0,.05);
+      background: #fff;
+
+      .card-Img{
+        background-image: url(img_1.webp);
+        background-size: cover;
+        background-position: center;
+        flex: 0 0 260px;
+        margin-right: 50px;
+        max-width: 100%;
+        height: 260px;
+      }
+      .card-Text
+      {
+
+        .card-Link {
+          font-size: 11px;
+          text-transform: uppercase;
+          font-weight: 700;
+          letter-spacing: .1rem;
+        }
+        h3 a{
+          color: #000000;
+          font-size: 1.75rem;
+          font-weight: 400;
+          margin-bottom: 0.5rem;
+        }
+        p{
+          color: #364d59;
+          font-size: 1rem;
+          font-weight: 300;
+          margin-bottom: 1rem;
+          line-height: 1.7;
+        }
+
+        .icons
+        {
+          span
+          {
+            font-size: 1.5rem;
+            padding: 2px;
+
+            .fa-react{
+              color: #61dafb;
+            }
+
+            .fa-js{
+              background-color: #f8f9fa;
+              color: #f7df1e;
+            }
+          }
+
+        }
+      }
+
+      .card-Time{
+        color: #a6a6a6!important;
+      }
+    }
+
+    .card-Boxs
+    {
+      display: block;
+
+      .card-Box1
+      {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 0.5rem;
+        display: flex;
+
+        .card-Img1,.card-Img2,.card-Img3{
+          flex: 0 0 80px;
+          margin-right: 20px;
+          background-size: cover;
+        }
+
+        .card-Img1{
+          background-image: url(img_2.webp);
+        }
+
+        .card-Img2{
+          background-image: url(img_3.webp);
+        }
+
+        .card-Img3{
+          background-image: url(img_4.webp);
+        }
+
+        .card-Text1
+        {
+          padding-top: 11px ;
+          .card-Link{
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: .1rem;
+          }
+          h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            
+            a{
+              color: #000;
+            }
+          }
+          @media (min-width:992px) and (max-width:1125px){
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
