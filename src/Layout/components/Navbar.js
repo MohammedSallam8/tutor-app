@@ -51,13 +51,12 @@ export default () => {
 
                         {/*// sidebar*/}
                         <div id="nav-block-section" onClick={(e) => e.stopPropagation()} className={navBlock ? "navBlock" : "navBlock hide"}>
-                            <div className="side-closeButton">
-                                <span><i onClick={(e) => {
+                            <button onClick={(e) => {
                                     e.stopPropagation();
                                     setNavBlock(false)
-                                }}
-                                         className="fas fa-times closeIcon"> </i></span>
-                            </div>
+                                }} className="side-closeButton fas fa-times">
+                                
+                            </button>
 
                             <div className="navLink-side">
                                 <ul>
