@@ -66,7 +66,8 @@
 }
 
 
-.navBlock {
+.navBlock
+{
     background-color: #fff;
     z-index: 100;
     width: 300px;
@@ -77,41 +78,45 @@
     box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
     transition: all 0.7s ease-in-out;
     margin-top: -73px;
-}
 
-.side-closeButton {
-    width: 100%;
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    .side-closeButton
+    {
+        width: 100%;
+        float: left;
+        padding: 20px;
 
-.closeIcon {
-    font-size: 30px;
-    cursor: pointer;
-}
+        .closeIcon {
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
 
-.navLink-side {
-    width: 100%;
-}
 
-.navLink-side ul li {
-    display: block;
-    text-align-last: left;
-    padding: 0.5em 2em;
-}
+    .navLink-side
+    {
+        width: 100%;
 
-.navLink-side ul li a {
-    font-size: 23px;
-    color: #212529;
-    z-index: 4;
-    padding: 10px 20px;
-}
+        ul > li
+        {
+            display: block;
+            text-align-last: left;
+            padding: 0.5em 0;
 
-.navLink-side ul li a.active {
-    color: #0779e4;
-}
+            a
+            {
+                font-size: 23px;
+                color: #212529;
+                z-index: 4;
+                padding: 10px 20px;
 
-.navLink-side ul li a:hover {
-    color: #0779e4;
+                &:hover {
+                    color: #0779e4;
+                }
+            }
+
+            .active {
+                color: #0779e4;
+            }
+        }
+    }
 }
