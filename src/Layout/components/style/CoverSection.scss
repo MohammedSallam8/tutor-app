@@ -1,0 +1,52 @@
+.Cover-Section
+{
+  display: flex;
+  background-image: url(hero_bg.jpg);
+  height: 90vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 1;
+    height: 90vh;
+    @media (max-width: 992px){
+      height: 70vh;
+    }
+  }
+
+  .Cover-text
+  {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+
+    h1{
+      font-size: 3rem;
+      font-weight: 300;
+      color: #fff;
+      line-height: 1;
+      @media (max-width: 992px) {
+        font-size: 2rem;
+      }
+    }
+
+    strong{
+      font-weight: 900;
+    }
+    
+  }
+  @media (max-width: 992px){
+    height: 70vh;
+  }
+}

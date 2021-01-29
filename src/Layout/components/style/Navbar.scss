@@ -1,121 +1,143 @@
-.navs
+.section-header
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 0;
-    background: #000000;
-    overflow: hidden;
+    position: absolute;
 
-    .navBrand a {
-        color: #fff;
-        font-weight: 700;
-    }
-
-    .nav-links
+    .navs
     {
-        a {
-            font-size: 1.10em;
-            color: #fff;
-            padding: 0.5em 1em;
-            font-weight: 400;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 0;
+        background: transparent;
+        overflow: hidden;
 
-        ul
+        .navBrand
         {
-            .nav-link-item {
-                display: inline-block;
-                overflow: hidden;
-            }
-
-            .active::after {
-                content: "";
-                position: absolute;
-                left: 50.7%;
-                top: 50px;
-                width: 44px;
-                height: 2px;
-                background: #fff;
+            z-index: 2;
+            a {
+                color: #fff;
+                font-weight: 700;
+                z-index: 2;
             }
         }
 
-        @media (max-width: 991px) {
-            display: none;
-        }
-    }
-
-    .dropdown-itemToggle
-    {
-        display: none;
-
-        .itemToggler {
-            background: transparent;
-            color: #ffffff;
-            font-size: 25px;
-            text-align: right;
-            cursor: pointer;
-            border: 0;
-            outline: none;
-        }
-
-        @media (max-width: 991px) {
-            display: block;
-        }
-    }
-
-}
-
-
-.navBlock
-{
-    background-color: #fff;
-    z-index: 100;
-    width: 300px;
-    position: fixed;
-    right: 0;
-    padding-top: 20px;
-    height: 100vh;
-    box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
-    transition: all 0.7s ease-in-out;
-    margin-top: -73px;
-
-    .side-closeButton
-    {
-        width: 100%;
-        float: left;
-        padding: 20px;
-
-        .closeIcon {
-            font-size: 30px;
-            cursor: pointer;
-        }
-    }
-
-
-    .navLink-side
-    {
-        width: 100%;
-
-        ul > li
+        .nav-links
         {
-            display: block;
-            text-align-last: left;
-            padding: 0.5em 0;
+            z-index: 2;
+            a {
+                font-size: 1.10em;
+                color: #fff;
+                padding: 0.5em 1em;
+                font-weight: 400;
+            }
 
-            a
+            ul
             {
-                font-size: 23px;
-                color: #212529;
-                z-index: 4;
-                padding: 10px 20px;
+                .nav-link-item {
+                    display: inline-block;
+                    overflow: hidden;
+                }
 
-                &:hover {
-                    color: #0779e4;
+                .active::after {
+                    content: "";
+                    position: absolute;
+                    left: 50.7%;
+                    top: 50px;
+                    width: 44px;
+                    height: 2px;
+                    background: #fff;
                 }
             }
 
-            .active {
-                color: #0779e4;
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        .dropdown-ItemToggle
+        {
+            display: none;
+            z-index: 2;
+
+            .item-Toggler {
+                background: transparent;
+                color: #000000;
+                font-size: 25px;
+                text-align: right;
+                cursor: pointer;
+                border: 0;
+                outline: none;
+            }
+
+            @media (max-width: 991px) {
+                display: block;
+            }
+        }
+
+    }
+
+
+    .navBlock
+    {
+        background-color: #fff;
+        z-index: 100;
+        width: 300px;
+        position: fixed;
+        right: 0;
+        padding-top: 20px;
+        height: 100vh;
+        box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+        transition: all 0.7s ease-in-out;
+        margin-top: -73px;
+        
+
+        .side-closeButton
+        {
+            float: right;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            font-size: 25px;
+            padding: 20px;
+            transition: 0.3s all ease-in-out;
+
+            &:hover{
+                opacity: 0.5;
+            }
+
+            .closeIcon {
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+
+
+        .navLink-side
+        {
+            width: 100%;
+            margin-top: 70px;
+
+            ul > li
+            {
+                display: block;
+                text-align-last: left;
+                padding: 0.5em 1rem;
+
+                a
+                {
+                    font-size: 23px;
+                    color: #212529;
+                    z-index: 4;
+                    padding: 10px 20px;
+
+                    &:hover {
+                        color: #0779e4;
+                    }
+                }
+
+                .active {
+                    color: #0779e4;
+                }
             }
         }
     }
