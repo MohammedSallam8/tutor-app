@@ -99,7 +99,9 @@ export default function Footer() {
 
         <div className="row pt-5 mt-5 text-center">
           <div className="col-md-12">
-            <p>Copyright ©2021 All rights reserved | This template is made with <i class="fas fa-heart"></i> by <a href="#">Colorlib</a></p>
+            <p>Copyright ©2021 All rights reserved | This template is made with
+              <i class="fas fa-heart"></i> by <a href="#">Colorlib</a>
+            </p>
           </div>
         </div>
 

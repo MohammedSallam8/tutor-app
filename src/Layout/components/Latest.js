@@ -119,6 +119,7 @@ export default function Latest() {
 
 
           <div className="col-lg-4">
+            
             <div className="right-card">
               <div className="right-card-img img1"></div>
               <h3>Learning React Native</h3>
@@ -126,13 +127,13 @@ export default function Latest() {
 
 
             <div className="right-card">
-            <div className="right-card-img img2"></div>
+              <div className="right-card-img img2"></div>
               <h3>Learning React Native</h3>
             </div>
 
 
             <div className="right-card">
-            <div className="right-card-img img3"></div>
+              <div className="right-card-img img3"></div>
               <h3>Learning React Native</h3>
             </div>
 
