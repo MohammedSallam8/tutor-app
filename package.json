@@ -1,4 +1,9 @@
 {
+  "engines": {
+    "node": "20.x"
+  }
+},
+{
   "name": "tutor-app",
   "version": "0.1.0",
   "private": true,
